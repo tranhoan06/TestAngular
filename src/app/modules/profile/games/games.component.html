@@ -1,0 +1,164 @@
+<div class="d-flex flex-wrap flex-stack mb-6">
+  <h3 class="fw-bolder my-2">
+    Game đang chơi
+    <span class="fs-6 text-gray-400 fw-bold ms-1">Active</span>
+  </h3>
+
+  <div class="d-flex flex-wrap my-2">
+    <div class="me-4">
+      <select
+        name="status"
+        data-control="select2"
+        data-hide-search="true"
+        class="form-select form-select-sm form-select-white w-125px"
+        defaultValue="Active"
+      >
+        <option value="Active">Active</option>
+        <option value="Approved">In Progress</option>
+        <option value="Declined">To Do</option>
+        <option value="In Progress">Completed</option>
+      </select>
+    </div>
+    <a
+      class="btn btn-primary btn-sm cursor-pointer"
+      data-bs-toggle="modal"
+      data-bs-target="#kt_modal_create_project"
+    >
+      Thêm Game
+    </a>
+  </div>
+</div>
+
+<div class="row g-6 g-xl-9">
+  <div class="col-md-6 col-xl-4">
+    <app-card6
+      icon="https://i.pinimg.com/564x/d1/b1/1d/d1b11d5e4dbae547ac0d651476cec488.jpg"
+      badgeColor="primary"
+      status="Chơi ngay"
+      statusColor="primary"
+      title="League of Legends"
+      description="Liên Minh Huyền Thoại (tiếng Anh: League of Legends, viết tắt: LMHT hoặc LoL), thường được gọi ngắn gọn là Liên Minh (League), "
+      date="September 7, 2008"
+      budget="$284,900.00"
+      [progress]="50"
+      [users]="users1"
+    ></app-card6>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <app-card6
+      icon="https://i.pinimg.com/564x/da/5a/eb/da5aeb440877213b039866c6b764887c.jpg"
+      badgeColor="warning"
+      status="Hơi nghiện rồi"
+      statusColor="warning"
+      title="CS:GO"
+      description="CS:GO được phát hành vào ngày 21 tháng 8 năm 2012 bởi Valve Corporation và phát triển dựa trên các nội dung gốc từ Counter-Strike 1.6. CS:GO (Counter-Strike: Global Offensive) là một game bắn súng góc nhìn thứ nhất nhiều Người Chơi."
+      date="August 21, 2012"
+      budget="$284,900.00"
+      [progress]="80"
+      [users]="users2"
+    ></app-card6>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <app-card6
+      icon="https://i.pinimg.com/564x/ad/ca/99/adca994150c919f8843579aed6ef22e2.jpg"
+      badgeColor="danger"
+      status="Quá nghiện rồi"
+      statusColor="danger"
+      title="PUBG"
+      description="PUBG: Battlegrounds (trước đây là PlayerUnknown's Battlegrounds, hay viết tắt là PUBG) là một trò chơi điện tử hành động, sinh tồn, nhiều người chơi trực tuyến do Krafton Inc thiết kế, phát triển và phát hành."
+      date="March 2017"
+      budget="$284,900.00"
+      [progress]="100"
+      [users]="users3"
+    ></app-card6>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <app-card6
+      icon="https://i.pinimg.com/564x/e5/24/e3/e524e3554d855e44ce797310ce8f890f.jpg"
+      badgeColor="primary"
+      status="Chơi ngay"
+      statusColor="primary"
+      title="Fifa 23"
+      description="FIFA, còn được gọi là FIFA Football và chuẩn bị đổi tên thành EA Sports Football Champions từ năm 2023, là một loạt các trò chơi điện tử bóng đá được EA Sports (thuộc Electronic Arts) phát triển và phát hành mỗi năm."
+      date="1993"
+      budget="$284,900.00"
+      [progress]="50"
+      [users]="users4"
+    ></app-card6>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <app-card6
+      icon="https://i.pinimg.com/564x/b0/3a/9a/b03a9ab25a3e9449a6bc4645f97ba213.jpg"
+      badgeColor="primary"
+      status="Chơi ngay"
+      statusColor="primary"
+      title="DOTA 2"
+      description="Dota 2 là một trò chơi đấu trường trận chiến trực tuyến nhiều người chơi (MOBA) được Valve Corporation phát triển, dựa theo một mod game nổi tiếng - DoA"
+      date="September, 23, 2010"
+      budget="$284,900.00"
+      [progress]="50"
+      [users]="users5"
+    ></app-card6>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <app-card6
+      icon="https://i.pinimg.com/564x/b8/af/c8/b8afc8273e3fff0bb9633a045786dec9.jpg"
+      badgeColor="danger"
+      status="Cực kì nghiện"
+      statusColor="danger"
+      title="Age of Empires"
+      description="Age of Empires, còn được biết đến ở Việt Nam với tên gọi Đế chế, là một dòng trò chơi điện tử chiến thuật thời gian thực mang tính chất lịch sử, ban đầu do Ensemble Studios phát triển và Xbox Game Studios phát hành."
+      date="1997"
+      budget="$284,900.00"
+      [progress]="100"
+      [users]="users6"
+    ></app-card6>
+  </div>
+</div>
+
+<div class="d-flex flex-stack flex-wrap pt-10">
+  <div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries</div>
+
+  <ul class="pagination">
+    <li class="page-item previous">
+      <a class="page-link cursor-pointer">
+        <i class="previous"></i>
+      </a>
+    </li>
+
+    <li class="page-item active">
+      <a class="page-link cursor-pointer"> 1 </a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link cursor-pointer"> 2 </a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link cursor-pointer"> 3 </a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link cursor-pointer"> 4 </a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link cursor-pointer"> 5 </a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link cursor-pointer"> 6 </a>
+    </li>
+
+    <li class="page-item next">
+      <a class="page-link cursor-pointer">
+        <i class="next"></i>
+      </a>
+    </li>
+  </ul>
+</div>
